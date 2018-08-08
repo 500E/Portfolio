@@ -10,7 +10,7 @@
     width: 1.7rem;
     height: 0.2rem;
     margin: 0 0 0.3rem 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -109,7 +109,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color:set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
