@@ -2,6 +2,10 @@
     .projects {
         grid-template-columns: repeat(4,1fr);
     }
+
+    .boxes {
+        font-size: 1.5rem;
+    }
 }
 
 @include mediaLg {
@@ -73,6 +77,10 @@
     .projects {
         grid-template-columns: repeat(2,1fr);
     }
+
+    .boxes {
+        font-size: 0.8rem;
+    }
 }
 
 @include mediaSm {
@@ -87,5 +95,9 @@
 
     .projects {
         grid-template-columns: 1fr;
+    }
+
+    .boxes {
+        font-size: 0.6rem;
     }
 }

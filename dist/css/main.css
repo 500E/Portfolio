@@ -163,7 +163,8 @@ main {
   .about-info .job {
     background: #2f383c;
     padding: 0.5rem;
-    border-bottom: 5px solid #cf5814; }
+    border-bottom: 5px solid #cf5814;
+    border-radius: 0.4em; }
 
 .projects {
   display: grid;
@@ -171,17 +172,34 @@ main {
   grid-gap: 2em; }
   .projects img {
     width: 100%;
-    border: 3px solid #fff; }
+    border: 3px solid #fff;
+    border-radius: 0.4em; }
     .projects img:hover {
       opacity: 0.8;
       border-color: #cf5814;
       transition: all 0.5s ease-out; }
 
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 1rem;
+  border: 3px solid white;
+  padding: 1em;
+  transition: all 0.5s ease-out;
+  text-align: center;
+  border-radius: 0.4em; }
+  .boxes:hover {
+    background: #cf5814;
+    color: #000; }
+    .boxes:hover span {
+      color: #000; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  border-radius: 0.4em; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #cf5814;
     color: set-text-color #cf5814; }
@@ -203,7 +221,9 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .boxes {
+    font-size: 1.5rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -242,7 +262,9 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes {
+    font-size: 0.8rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -251,4 +273,6 @@ main {
     text-align: center;
     justify-content: center; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .boxes {
+    font-size: 0.6rem; } }
