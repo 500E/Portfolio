@@ -4,13 +4,13 @@
   right: 2.5rem;
   top: 2.5rem;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.4s ease-out; }
   .menu-btn .btn-line {
     width: 1.7rem;
     height: 0.2rem;
     margin: 0 0 0.3rem 0;
     background: #fff;
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -40,16 +40,16 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #191e20;
+    background: #0f0f0f;
     list-style-type: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #242b2e;
+    background: #1C1C1C;
     transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -58,14 +58,14 @@
       background: url(../img/portrait.png);
       background-position: cover;
       border-radius: 50%;
-      border: solid 3px #cf5814; }
+      border: solid 3px #00ff40; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #cf5814; }
+      color: #00ff40; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -75,9 +75,9 @@
     font-weight: 300;
     color: #fff;
     text-decoration: none;
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu .nav-link:hover {
-      color: #cf5814; }
+      color: #00ff40; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.08s; }
@@ -95,7 +95,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #242b2e;
+  background: #1C1C1C;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -112,10 +112,10 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(40, 48, 52, 0.5); }
+    background: rgba(33, 33, 33, 0.5); }
 
 a {
-  color: white;
+  color: #fff;
   text-decoration: none; }
 
 header {
@@ -124,7 +124,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #cf5814; }
+  color: #00ff40; }
 
 main {
   padding: 4rem;
@@ -134,8 +134,8 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #cf5814;
-        transition: all 0.5s ease-out; }
+        color: #00ff40;
+        transition: all 0.4s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -144,13 +144,13 @@ main {
 .about-info {
   display: grid;
   grid-gap: 2rem;
-  grid-template-areas: 'bio bio bioimage' 'job1 job2 job3';
+  grid-template-areas: 'bio bio bioimage' 'job1 job2 .';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: 3px solid #cf5814; }
+    border: 3px solid #00ff40; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -158,13 +158,17 @@ main {
     grid-area: job1; }
   .about-info .job-2 {
     grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
   .about-info .job {
-    background: #2f383c;
+    background: #292929;
     padding: 0.5rem;
-    border-bottom: 5px solid #cf5814;
+    border-bottom: 5px solid #00ff40;
     border-radius: 0.4em; }
+    .about-info .job h3 {
+      text-align: center;
+      color: #00ff40; }
+    .about-info .job ul li {
+      padding: 0.3em;
+      text-align: left; }
 
 .projects {
   display: grid;
@@ -172,24 +176,25 @@ main {
   grid-gap: 2em; }
   .projects img {
     width: 100%;
+    max-height: 200px;
     border: 3px solid #fff;
     border-radius: 0.4em; }
     .projects img:hover {
       opacity: 0.8;
-      border-color: #cf5814;
-      transition: all 0.5s ease-out; }
+      border-color: #00ff40;
+      transition: all 0.4s ease-out; }
 
 .boxes {
   display: grid;
   grid-template-columns: 1fr;
   font-size: 1rem;
-  border: 3px solid white;
+  border: 3px solid #fff;
   padding: 1em;
-  transition: all 0.5s ease-out;
+  transition: all 0.4s ease-out;
   text-align: center;
   border-radius: 0.4em; }
   .boxes:hover {
-    background: #cf5814;
+    background: #00ff40;
     color: #000; }
     .boxes:hover span {
       color: #000; }
@@ -201,21 +206,21 @@ main {
   margin-bottom: 0.3rem;
   border-radius: 0.4em; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #cf5814;
-    color: set-text-color #cf5814; }
+    background: #00ff40;
+    color: set-text-color #00ff40; }
 
 .btn-dark {
   background: black;
   color: #fff; }
 
 .btn-light {
-  background: #9eadb3;
-  color: #333; }
+  background: #828282;
+  color: #fff; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #0e1011;
+  background: #030303;
   color: #fff;
   height: 4rem; }
 

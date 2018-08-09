@@ -1,23 +1,13 @@
-$primary-color: rgb(36, 43, 46);
-$secondary-color: rgb(207, 88, 20);
+$primary-color: #1C1C1C;
+$secondary-color: rgb(0, 255, 64);
 $show-home-image: true;
-$home-image: url(../img/background.jpeg);
 $background-opacity: 0.9;
 $border-radius: 0.4em;
 
 @mixin easeOut {
-  transition: all 0.5s ease-out;
+  transition: all 0.4s ease-out;
 }
 
-@mixin background {
-  @if $show-home-image {
-    &#bg-img {
-      background: $home-image;
-      background-attachment: fixed;
-      background-size: cover;
-    }
-  }
-}
 
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
